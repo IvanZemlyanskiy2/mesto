@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./pages/index.css" rel="stylesheet">
+  <title>Жак-Ив Кусто</title>
+</head>
+
+<body class="body">
+  <div class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/Vector.png" alt="Место Россия">
+    </header>
+    <main class="content">
+      <div class="profile">
+        <img class="avatar" src="./images/avatar.svg" alt="Фотография Кусто">
+        <div class="name">
+          <div class="name__block">
+            <h1 class="name__title">Жак-Ив Кусто</h1>
+            <button class="editbutton"></button>
+          </div>
+          <p class="name__subtitle">Исследователь океана</p>
+        </div>
+
+        <button class="addbutton"></button>
+      </div>
+      <ul class="photo">
+        <li class="photo__list">
+          <img class="photo__greed" src="./images/karachev1.png" alt="карачев 1">
+          <div class="photo__blok">
+            <h2 class="photo__title">Карачаевск</h2>
+            <img class="heartbutton" src="./images/heart.png" alt="сердце">
+          </div>
+        </li>
+        <li class="photo__list">
+          <img class="photo__greed" src="./images/zakat.png" alt="закат">
+          <div class="photo__blok">
+            <h2 class="photo__title">Гора Эльбрус</h2>
+            <img class="heartbutton" src="./images/heart.png" alt="сердце">
+          </div>
+        </li>
+        <li class="photo__list">
+          <img class="photo__greed" src="./images/les.png" alt="лес">
+          <div class="photo__blok">
+            <h2 class="photo__title">Домбай</h2>
+            <img class="heartbutton" src="./images/heart.png" alt="сердце">
+          </div>
+        </li>
+        <li class="photo__list">
+          <img class="photo__greed" src="./images/zakat.png" alt="закат">
+          <div class="photo__blok">
+            <h2 class="photo__title">Гора Эльбрус</h2>
+            <img class="heartbutton" src="./images/heart.png" alt="сердце">
+          </div>
+        </li>
+        <li class="photo__list">
+          <img class="photo__greed" src="./images/pik.png" alt="пик">
+          <div class="photo__blok">
+            <h2 class="photo__title">Домбай</h2>
+            <img class="heartbutton" src="./images/heart.png" alt="сердце">
+          </div>
+        </li>
+        <li class="photo__list">
+          <img class="photo__greed" src="./images/karachev2.png" alt="карачев 2">
+          <div class="photo__blok">
+            <h2 class="photo__title">Карачаево-Черкессия</h2>
+            <img class="heartbutton" src="./images/heart.png" alt="сердце">
+          </div>
+        </li>
+      </ul>
+      <footer class="footer">
+        <h2 class="footer__text">&copy; 2022 Mesto Russia</h2>
+      </footer>
+    </main>
+  </div>
+  <form class="popup">
+    <button class="Close"><img class="close__pic" src="./images/CloseIcon.png" alt="Крестик"></button>
+    <div class="popup__container">
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <div class="popup__about">
+        <input type="text" class="popup__kusto" maxlength="22">
+        <input type="text" class="popup__text" maxlength="22">
+      </div>
+      <button class="savebutton" type="submit">
+        <span class="savebutton__color">Сохранить</span>
+      </button>
+    </div>
+  </form>
+  <script src="index.js"></script>
+</body>
+
+</html>

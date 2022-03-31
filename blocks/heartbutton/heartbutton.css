@@ -1,0 +1,11 @@
+.heartbutton {
+  min-width: 22px;
+  max-height: 19px;
+  margin: 0px;
+  margin-right: 20px;
+  margin-top: 31px;
+}
+
+.heartbutton:hover {
+opacity: 50%;
+}
