@@ -12,14 +12,14 @@ let popupKusto = document.querySelector('.popup__kusto');
 let popup = document.querySelector('.popup');
 
 function Open() {
-  popup.classList.add('popup_opened');
+  popup.classList.toggle('popup_opened');
   popupKusto.value = nameTitle.textContent;
   popupText.value = nameSubtitle.textContent;
 }
 editButton.addEventListener('click', Open);
 
 function Exit() {
-  popup.classList.remove('popup_opened');
+  Close = popup.classList.remove('popup_opened');
 }
 Close.addEventListener('click', Exit);
 
