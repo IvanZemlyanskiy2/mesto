@@ -1,0 +1,16 @@
+.popup__color {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+@media all and (max-width: 320px) {
+  .popup__color {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

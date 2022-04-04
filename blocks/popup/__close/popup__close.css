@@ -1,0 +1,19 @@
+.popup__close {
+  position: fixed;
+  top: 155px;
+  left: 863px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+ }
+
+
+@media all and (max-width: 320px) {
+  .popup__close {
+    max-height: 20px;
+    max-width: 20px;
+    left: 281px;
+    top: 87px;
+  }
+}
