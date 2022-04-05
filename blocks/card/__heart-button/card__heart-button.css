@@ -1,4 +1,4 @@
-.card__heartbutton {
+.card__heart-button {
   background-image: url(../../../images/HEART.svg);
   border: none;
   background-color: white;
@@ -9,6 +9,6 @@
   margin-top: 31px;
 }
 
-.card__heartbutton:hover {
+.card__heart-button:hover {
 opacity: 50%;
 }

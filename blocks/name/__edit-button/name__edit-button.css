@@ -1,4 +1,4 @@
-.name__editbutton {
+.name__edit-button {
   background-image: url(../../../images/PENCILl.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -10,19 +10,19 @@
   margin-left: 19px;
   }
 
-.name__editbutton:hover {
+.name__edit-button:hover {
   opacity: 50%;
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
-  .name__editbutton {
+  .name__edit-button {
     max-width: 20px;
     max-height: 20px;
   }
 }
 
 @media all and (max-width: 320px) {
-  .name__editbutton {
+  .name__edit-button {
     min-width: 18px;
     max-height: 18px;
     margin-left: 10px;

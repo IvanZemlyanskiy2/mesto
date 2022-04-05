@@ -1,9 +1,9 @@
-let editButton = document.querySelector('.name__editbutton');
+let editButton = document.querySelector('.name__edit-button');
 let popupContainer = document.querySelector('.popup__container');
 
 let popupOpened = document.querySelector('.popup_opened');
 let exit = document.querySelector('.popup__close');
-let saveButton = document.querySelector('.popup__savebutton');
+let saveButton = document.querySelector('.popup__save-button');
 let nameTitle = document.querySelector('.name__title');
 let popupText = document.querySelector('.popup__input_kusto');
 let nameSubtitle = document.querySelector('.name__subtitle');

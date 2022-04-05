@@ -20,12 +20,12 @@
         <div class="name">
           <div class="name__block">
             <h1 class="name__title">Жак-Ив Кусто</h1>
-            <button type="button" class="name__editbutton"></button>
+            <button type="button" class="name__edit-button"></button>
           </div>
           <p class="name__subtitle">Исследователь океана</p>
         </div>
 
-        <button type="button" class="profile__addbutton"></button>
+        <button type="button" class="profile__add-button"></button>
       </div>
       <section class="photo">
         <ul class="cards">
@@ -33,42 +33,42 @@
             <img class="card__greed" src="./images/karachev1.png" alt="карачев 1">
             <div class="card__blok">
               <h2 class="card__title">Карачаевск</h2>
-              <button type="button" class="card__heartbutton"></button>
+              <button type="button" class="card__heart-button"></button>
             </div>
           </li>
           <li class="card">
             <img class="card__greed" src="./images/zakat.png" alt="закат">
             <div class="card__blok">
               <h2 class="card__title">Гора Эльбрус</h2>
-              <button type="button" class="card__heartbutton"></button>
+              <button type="button" class="card__heart-button"></button>
             </div>
           </li>
           <li class="card">
             <img class="card__greed" src="./images/les.png" alt="лес">
             <div class="card__blok">
               <h2 class="card__title">Домбай</h2>
-              <button type="button" class="card__heartbutton"></button>
+              <button type="button" class="card__heart-button"></button>
             </div>
           </li>
           <li class="card">
             <img class="card__greed" src="./images/zakat.png" alt="закат">
             <div class="card__blok">
               <h2 class="card__title">Гора Эльбрус</h2>
-              <button type="button" class="card__heartbutton"></button>
+              <button type="button" class="card__heart-button"></button>
             </div>
           </li>
           <li class="card">
             <img class="card__greed" src="./images/pik.png" alt="пик">
             <div class="card__blok">
               <h2 class="card__title">Домбай</h2>
-              <button type="button" class="card__heartbutton"></button>
+              <button type="button" class="card__heart-button"></button>
             </div>
           </li>
           <li class="card">
             <img class="card__greed" src="./images/karachev2.png" alt="карачев 2">
             <div class="card__blok">
               <h2 class="card__title">Карачаево-Черкессия</h2>
-              <button type="button" class="card__heartbutton"></button>
+              <button type="button" class="card__heart-button"></button>
             </div>
           </li>
         </ul>
@@ -78,18 +78,17 @@
       <h2 class="footer__text">&copy; 2022 Mesto Russia</h2>
     </footer>
   </div>
-  <form class="popup">
-    <button type="button" class="popup__close"><img class="popup__pic" src="./images/CloseIcon.svg"
-        alt="Крестик"></button>
+  <div class="popup">
+    <button type="button" class="popup__close"></button>
     <div class="popup__container">
       <h2 class="popup__title">Редактировать профиль</h2>
-      <div class="popup__about">
-        <input type="text" name="name" class="popup__input popup__input_text" maxlength="22">
-        <input type="text" name="firstname" class="popup__input popup__input_kusto" maxlength="22">
-      </div>
-      <button class="popup__savebutton" type="submit">Сохранить</button>
+      <form name="name" class="popup__about">
+        <input type="text" name="name" class="popup__input popup__input_text">
+        <input type="text" name="about" class="popup__input popup__input_kusto">
+        <button class="popup__savebutton" type="submit">Сохранить</button>
+      </form>
     </div>
-  </form>
+  </div>
   <script src="./script/index.js"></script>
 </body>
 

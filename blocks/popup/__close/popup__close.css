@@ -1,12 +1,13 @@
 .popup__close {
+  background-image: url(../../../images/CloseIcon.svg);
   position: fixed;
-  top: 155px;
-  left: 863px;
+  top: 130px;
+  left: 890px;
   width: 32px;
   height: 32px;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
- }
+}
 
 
 @media all and (max-width: 320px) {

@@ -1,12 +1,12 @@
 .popup__container {
-  position: fixed;
+ display: grid;
   width: 430px;
-  height: 330px;
   background-color: white;
-  top: 195px;
-  left: 425px;
   border-radius: 10px;
- }
+  justify-self:center;
+  align-self: center;
+
+  }
 
 @media all and (max-width: 320px) {
   .popup__container {
