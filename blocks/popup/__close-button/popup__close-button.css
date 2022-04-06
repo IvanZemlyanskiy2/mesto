@@ -2,14 +2,13 @@
   background-image: url(../../../images/CloseIcon.svg);
   background-size: cover;
   position: absolute;
-  top: 7%;
+  top: 19%;
   left: 67%;
   width: 32px;
   height: 32px;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
-  background-image: rgba(255, 255, 255, 1);
-}
+  }
 
 .popup__close-button:hover {
   opacity: 60%;
@@ -21,7 +20,7 @@
   .popup__close-button {
     height: 20px;
     width: 20px;
-    top: 7%;
+    top: 17%;
     left: 87%;
   }
 }
