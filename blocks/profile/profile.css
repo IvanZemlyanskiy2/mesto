@@ -1,7 +1,6 @@
 .profile {
   display: flex;
-  flex-direction: row;
-  max-width: calc(100% - 400px);
+  max-width: 880px;
   margin-top: 37px;
   margin-left: auto;
   margin-right: auto;
@@ -9,7 +8,7 @@
 
 
 
-@media all and (min-width: 321px) and (max-width: 1038px) {
+@media all and (min-width: 321px) and (max-width: 1120px) {
   .profile {
     flex-direction: column;
     min-width: calc(100% - 32px);
@@ -17,7 +16,7 @@
   }
 }
 
-@media all and (max-width: 321px)  {
+@media all and (max-width: 320px) {
   .profile {
     flex-direction: column;
     max-width: calc(100% - 32px);

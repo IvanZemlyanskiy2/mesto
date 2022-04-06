@@ -1,4 +1,4 @@
-.name__subtitle {
+.profile__subtitle {
   color: white;
   font-size: 18px;
   font-style: normal;
@@ -10,21 +10,21 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 300px;
-
 }
 
 @media all and (min-width: 321px) and (max-width: 768px) {
-  .name__subtitle {
+  .profile__subtitle {
     font-size: 20px;
     line-height: 25px;
   }
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
-  .name__subtitle {
+  .profile__subtitle {
     font-size: 14px;
     line-height: 17px;
-    margin-left: 20px;
+    margin-left: 42px;
     padding-top: 7px;
+    max-width: 190px;
   }
 }

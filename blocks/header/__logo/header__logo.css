@@ -2,9 +2,11 @@
   margin-bottom: 41px;
   min-width: 15%;
 }
-@media all and (min-width: 321px) and (max-width: 768px) {
+
+@media all and (min-width: 320px) and (max-width: 1279px) {
   .header__logo {
-    min-width: 25%;
+    margin-bottom: 33px;
+    min-width: 105px;
   }
 }
 

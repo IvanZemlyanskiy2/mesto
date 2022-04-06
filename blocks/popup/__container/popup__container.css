@@ -1,18 +1,14 @@
 .popup__container {
- display: grid;
+  display: grid;
   width: 430px;
   background-color: white;
   border-radius: 10px;
-  justify-self:center;
+  justify-self: center;
   align-self: center;
-
-  }
+}
 
 @media all and (max-width: 320px) {
   .popup__container {
-    height: 322px;
     width: 282px;
-    left: 19px;
-    top: 123px;
   }
 }

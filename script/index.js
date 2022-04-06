@@ -1,34 +1,32 @@
-let editButton = document.querySelector('.name__edit-button');
+let profileEditButton = document.querySelector('.profile__edit-button');
 let popupContainer = document.querySelector('.popup__container');
+let popupCloseButton = document.querySelector('.popup__close-button');
+let popupSaveButton = document.querySelector('.popup__save-button');
+let profileName = document.querySelector('.profile__title');
+let userJobInput = document.querySelector('.popup__input_about');
+let profileUserJob = document.querySelector('.profile__subtitle');
 
-let popupOpened = document.querySelector('.popup_opened');
-let exit = document.querySelector('.popup__close');
-let saveButton = document.querySelector('.popup__save-button');
-let nameTitle = document.querySelector('.name__title');
-let popupText = document.querySelector('.popup__input_kusto');
-let nameSubtitle = document.querySelector('.name__subtitle');
-
-let popupKusto = document.querySelector('.popup__input_text');
+let userNameInput = document.querySelector('.popup__input_name');
 let popup = document.querySelector('.popup');
 
-function Open() {
+function openPopup() {
+  userNameInput.value = profileName.textContent;
+  userJobInput.value = profileUserJob.textContent;
   popup.classList.toggle('popup_opened');
-  popupKusto.value = nameTitle.textContent;
-  popupText.value = nameSubtitle.textContent;
 }
-editButton.addEventListener('click', Open);
+profileEditButton.addEventListener('click', openPopup);
 
-function Exit() {
-  exit = popup.classList.remove('popup_opened');
+function closePopup() {
+  popupCloseButton = popup.classList.remove('popup_opened');
 }
-exit.addEventListener('click', Exit);
+popupCloseButton.addEventListener('click', closePopup);
 
 function formSubmitHandler(evt) {
   evt.preventDefault();
-  Exit();
-  nameTitle.textContent = popupKusto.value;
-  nameSubtitle.textContent = popupText.value;
- }
+  profileName.textContent = userNameInput.value;
+  profileUserJob.textContent = userJobInput.value;
+  closePopup();
+}
 popup.addEventListener('submit', formSubmitHandler);
 
 
