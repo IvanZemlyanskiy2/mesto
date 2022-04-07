@@ -1,7 +1,7 @@
 .card__like-button {
   background-image: url(../../../images/HEART.svg);
   border: none;
-  background-color: white;
+  color: white;
   min-width: 22px;
   max-height: 19px;
   margin: 0px;
