@@ -2,25 +2,25 @@
   background-image: url(../../../images/CloseIcon.svg);
   background-size: cover;
   position: absolute;
-  top: 19%;
-  left: 67%;
+  left: 865px;
+  top: 156px;
   width: 32px;
   height: 32px;
-  background-color: rgba(0, 0, 0, 0.1);
   border: none;
-  }
+  background-color: transparent;
+}
 
 .popup__close-button:hover {
   opacity: 60%;
   cursor: pointer;
 }
 
-
 @media all and (max-width: 320px) {
   .popup__close-button {
     height: 20px;
     width: 20px;
-    top: 17%;
-    left: 87%;
+    left: 281px;
+    top: 87px;
   }
 }
+

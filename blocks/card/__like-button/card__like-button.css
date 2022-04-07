@@ -7,8 +7,10 @@
   margin: 0px;
   margin-right: 20px;
   margin-top: 31px;
+  background-color: transparent;
 }
 
 .card__like-button:hover {
   opacity: 60%;
+  cursor: pointer;
 }

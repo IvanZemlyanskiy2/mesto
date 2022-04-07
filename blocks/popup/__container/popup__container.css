@@ -5,10 +5,12 @@
   border-radius: 10px;
   justify-self: center;
   align-self: center;
+  margin-top: 280px;
 }
 
 @media all and (max-width: 320px) {
   .popup__container {
     width: 282px;
+    margin-top: 165px;
   }
 }

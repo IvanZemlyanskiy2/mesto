@@ -6,8 +6,6 @@
   margin-right: auto;
 }
 
-
-
 @media all and (min-width: 321px) and (max-width: 1120px) {
   .profile {
     flex-direction: column;
