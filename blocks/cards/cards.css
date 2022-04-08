@@ -15,16 +15,16 @@
   justify-content: center;
 }
 
-@media all and (min-width: 320px) and (max-width: 930px) {
+@media all and (min-width: 600px) and (max-width: 930px) {
   .cards {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
     max-width: calc(100% - 38px);
   }
 }
 
-@media all and (max-width: 320px) {
+@media all and (min-width: 320px) and (max-width: 599px) {
   .cards {
+    grid-template-columns: 1fr;
     margin-top: 36px;
     row-gap: 19px;
   }

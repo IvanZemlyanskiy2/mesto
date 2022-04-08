@@ -2,7 +2,8 @@
   background-color: black;
   width: 358px;
   height: 50px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 47px;
   border-radius: 2px;
   font-family: 'Inter', 'Arial', 'Helvetica', 'sans-serif';
   font-size: 18px;
@@ -22,6 +23,9 @@
     height: 46px;
     width: 238px;
     margin-left: auto;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    margin-top: px;
+    font-size: 14px;
+    line-height: 17px;
   }
 }
