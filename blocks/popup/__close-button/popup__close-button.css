@@ -8,7 +8,7 @@
   height: 32px;
   border: none;
   background-color: transparent;
-}
+  }
 
 .popup__close-button:hover {
   opacity: 60%;
