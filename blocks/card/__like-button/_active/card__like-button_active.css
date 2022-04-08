@@ -1,4 +1,4 @@
-.card__like-button_active:focus  {
+.card__like-button_active:focus {
   background-image: url(../../../../images/HeartActive.svg);
   background-color: transparent;
   opacity: 100%;
