@@ -1,4 +1,5 @@
 .popup__container {
+  position: relative;
   display: grid;
   width: 430px;
   background-color: white;

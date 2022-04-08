@@ -2,8 +2,8 @@
   background-image: url(../../../images/CloseIcon.svg);
   background-size: cover;
   position: absolute;
-  left: 865px;
-  top: 156px;
+  margin-left: 400px;
+  margin-top: -100px;
   width: 32px;
   height: 32px;
   border: none;
