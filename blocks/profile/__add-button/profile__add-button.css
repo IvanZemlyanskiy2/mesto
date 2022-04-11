@@ -27,6 +27,7 @@
 
 @media all and (max-width: 320px) {
   .profile__add-button {
+    background-image: url(../../../images/MalenikiyKREST.svg);
     margin: 0 auto;
     width: 100%;
     min-height: 50px;
