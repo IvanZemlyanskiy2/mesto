@@ -38,4 +38,3 @@ popupCloseButton.addEventListener('click', closePopup);
 
 
 
-

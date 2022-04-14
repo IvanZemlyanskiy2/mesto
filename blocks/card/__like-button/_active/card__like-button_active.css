@@ -1,5 +1,3 @@
 .card__like-button_active {
   background-image: url(../../../../images/HeartActive.svg);
-  background-color: transparent;
-  opacity: 100%;
 }
