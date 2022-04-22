@@ -13,7 +13,7 @@
 }
 
 @media all and (min-width: 320px) and (max-width: 499px) {
-  .popup__image  {
+  .popup__image {
     width: 240px;
     height: 299px;
     margin: 0;
