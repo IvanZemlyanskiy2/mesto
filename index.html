@@ -29,49 +29,18 @@
       </section>
       <section class="photo">
         <ul class="cards">
-          <li class="card">
-            <img class="card__image" src="./images/karachev1.jpg" alt="карачев 1">
-            <div class="card__block">
-              <h2 class="card__title">Карачаевск</h2>
-              <button type="button" class="card__like-button" aria-label="лайк"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="./images/zakatpole.jpg" alt="закат">
-            <div class="card__block">
-              <h2 class="card__title">Гора Эльбрус</h2>
-              <button type="button" class="card__like-button" aria-label="лайк"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="./images/les.jpg" alt="лес">
-            <div class="card__block">
-              <h2 class="card__title">Домбай</h2>
-              <button type="button" class="card__like-button" aria-label="лайк"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="./images/zakatpole.jpg" alt="закат">
-            <div class="card__block">
-              <h2 class="card__title">Гора Эльбрус</h2>
-              <button type="button" class="card__like-button" aria-label="лайк"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="./images/pik.jpg" alt="пик">
-            <div class="card__block">
-              <h2 class="card__title">Домбай</h2>
-              <button type="button" class="card__like-button" aria-label="лайк"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img class="card__image" src="./images/karachev1.jpg" alt="карачев 2">
-            <div class="card__block">
-              <h2 class="card__title">Карачаево-Черкессия</h2>
-              <button type="button" class="card__like-button" aria-label="лайк"></button>
-            </div>
-          </li>
+          <template class="template">
+            <li class="card">
+              <button type="button" class="card__delete-button" aria-label="корзина"></button>
+              <img class="card__image" alt="карачев 1">
+              <div class="card__block">
+                <h2 class="card__title"></h2>
+                <button type="button" class="card__like-button" aria-label="лайк"></button>
+              </div>
+            </li>
+          </template>
         </ul>
+
       </section>
     </main>
     <footer class="footer">
@@ -89,7 +58,25 @@
       </form>
     </div>
   </div>
-  
+  <div class="popup popup_type_create">
+    <div class="popup__container">
+      <button type="button" class="popup__close-button popup__close-button_type_close" aria-label="закрыть"></button>
+      <h2 class="popup__title">Новое место</h2>
+      <form name="name" class="popup__form popup__form_type_create">
+        <input type="text" name="title" class="popup__input popup__input_type_title" placeholder="Название">
+        <input type="text" name="link" class="popup__input popup__input_type_link" placeholder="Ссылка на картинку">
+        <button class="popup__save-button popup__save-button_type_create" type="submit"
+          aria-label="сохранить">Создать</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup_type_image">
+    <div class="popup__image">
+      <button type="button" class="popup__close-button popup__close-button_type_exit" aria-label="закрыть"></button>
+      <img class="popup__image-picture" alt="карачев 1">
+      <h2 class="popup__image-title"></h2>
+    </div>
+  </div>
   <script src="./script/index.js"></script>
 </body>
 
