@@ -39,7 +39,6 @@ function createCard(evt) {
   closePopup(popupCreate);
   popupCreateForm.reset();
 }
-popupCreateForm.addEventListener('submit', createCard);
 
 function render() {
   const cards = initialCards.map(getElement);
@@ -89,7 +88,7 @@ createCloseButton.addEventListener('click', function () {
 });
 
 formElement.addEventListener('submit', handleProfileFormSubmit);
-
+popupCreateForm.addEventListener('submit', createCard);
 popupCreateForm.addEventListener('submit', createCard);
 render();
 
