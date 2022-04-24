@@ -60,6 +60,7 @@ function getElement(item) {
   getElementTemplate.querySelector('.card__image').addEventListener('click', function (evt) {
     popupImage.querySelector('.popup__image-title').textContent = item.name;
     popupImage.querySelector('.popup__image-picture').src = item.link;
+    popupImage.querySelector('.popup__image-picture').alt = item.name;
     openPopup(popupImage);
   });
 
@@ -91,5 +92,3 @@ formElement.addEventListener('submit', handleProfileFormSubmit);
 popupCreateForm.addEventListener('submit', createCard);
 popupCreateForm.addEventListener('submit', createCard);
 render();
-
-
