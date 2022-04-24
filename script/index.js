@@ -63,7 +63,6 @@ function getElement(item) {
     popupImage.querySelector('.popup__image-picture').alt = item.name;
     openPopup(popupImage);
   });
-
   return getElementTemplate;
 }
 
