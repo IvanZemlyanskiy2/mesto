@@ -5,7 +5,9 @@
   background-color: white;
   border-radius: 10px;
   padding: 0px;
+  height: 330px;
   position: relative;
+ 
 }
 
 @media all and (min-width: 500px) and (max-width: 768px) {

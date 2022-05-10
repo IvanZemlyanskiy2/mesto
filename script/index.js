@@ -5,7 +5,6 @@ const userJobInput = document.querySelector('.popup__input_type_about');
 const profileUserJob = document.querySelector('.profile__subtitle');
 const userNameInput = document.querySelector('.popup__input_type_name');
 const popup = document.querySelector('.popup');
-const formElement = document.querySelector('.popup__form');
 const popupCreate = document.querySelector('.popup_type_create');
 const addButton = document.querySelector('.profile__add-button');
 const createCloseButton = document.querySelector('.popup__close-button_type_close');
@@ -14,6 +13,8 @@ const popupCreateForm = document.querySelector('.popup__form_type_create')
 const template = document.querySelector('.template').content;
 const cardsList = document.querySelector('.cards');
 const popupImage = document.querySelector('.popup_type_image');
+const overlayClose = document.querySelector('.popup__overlay');
+
 
 function openPopup(el) {
   el.classList.add('popup_opened');
@@ -21,14 +22,32 @@ function openPopup(el) {
 
 function closePopup(el) {
   el.classList.remove('popup_opened');
+
 }
 
-function handleProfileFormSubmit(evt) {
-  evt.preventDefault();
-  profileName.textContent = userNameInput.value;
-  profileUserJob.textContent = userJobInput.value;
-  closePopup(popup);
+const popupCloseOverley = function () {
+  const popupArry = Array.from(document.querySelectorAll('.popup'));
+  popupArry.forEach((overlayClose) => {
+    overlayClose.addEventListener("click", (evt) => {
+      if (evt.target.className === "popup__overlay") {
+        closePopup(overlayClose);
+      }
+    });
+  });
+};
+popupCloseOverley();
+
+
+const closePopupEsc = document.querySelectorAll('.popup');
+closePopupEsc.forEach(() => document.addEventListener('keydown', keyClose));
+function keyClose(evt) {
+  if (evt.key === 'Escape') {
+    closePopup(popup);
+    closePopup(popupImage);
+    closePopup(popupCreate);
+  }
 }
+
 
 function createCard(evt) {
   evt.preventDefault();
@@ -44,7 +63,7 @@ function render() {
   const cards = initialCards.map(getElement);
   cardsList.append(...cards);
 }
-
+render();
 function getElement(item) {
   const getElementTemplate = template.querySelector('.card').cloneNode(true);
   getElementTemplate.querySelector('.card__image').src = item.link;
@@ -87,7 +106,5 @@ createCloseButton.addEventListener('click', function () {
   closePopup(popupCreate);
 });
 
-formElement.addEventListener('submit', handleProfileFormSubmit);
 popupCreateForm.addEventListener('submit', createCard);
 popupCreateForm.addEventListener('submit', createCard);
-render();
