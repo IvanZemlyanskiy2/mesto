@@ -28,8 +28,8 @@ function closePopup(el) {
 const popupCloseOverley = function () {
   const popupArry = Array.from(document.querySelectorAll('.popup'));
   popupArry.forEach((overlayClose) => {
-    overlayClose.addEventListener("click", (evt) => {
-      if (evt.target.className === "popup__overlay") {
+    overlayClose.addEventListener('click', (evt) => {
+      if (evt.target.className === 'popup__overlay') {
         closePopup(overlayClose);
       }
     });
