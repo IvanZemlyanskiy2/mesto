@@ -56,12 +56,12 @@
           <label for="name" class="input-container">
             <input id="name" type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя"
               required minlength="2" maxlength="40">
-            <span class="name-error error"></span>
+            <span id="name-error" class="error name-error"></span>
           </label>
           <label for="text" class="input-container">
             <input id="text" type="text" name="about" class="popup__input popup__input_type_about"
               placeholder="Профессия" required minlength="2" maxlength="200">
-            <span class="text-error error"></span>
+            <span id="error-text " class="error text-error"></span>
           </label>
           <button id="popup__save-button" class="popup__save-button" type="submit"
             aria-label="сохранить">Сохранить</button>
@@ -78,12 +78,12 @@
           <label class="input-container">
             <input id="title" type="text" name="title" class="popup__input popup__input_type_title"
               placeholder="Название" required minlength="2" maxlength="30">
-            <span class="title-error error"></span>
+            <span id="error-title" class="error title-error"></span>
           </label>
           <label class="input-container">
             <input id="url" type="url" name="link" class="popup__input popup__input_type_link"
               placeholder="Ссылка на картинку" required>
-            <span class="url-error error"></span>
+            <span id="error-url" class="error url-error" ></span>
           </label>
           <button id="popup__create-button" class="popup__save-button popup__save-button_type_create" type="submit"
             aria-label="сохранить">Создать</button>

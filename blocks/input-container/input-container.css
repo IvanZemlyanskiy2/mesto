@@ -1,5 +1,5 @@
 .input-container {
 margin: 0;
-padding: 0;
-height: 56px;
+padding: 0; 
+min-height: 56px;
 }
