@@ -26,6 +26,7 @@ function openPopup(el) {
 
 function closePopup(el) {
   el.classList.remove('popup_opened');
+  document.addEventListener('keydown', keyClose);
 }
 formElement.addEventListener('submit', function (evt) {
   evt.preventDefault();
