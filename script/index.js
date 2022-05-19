@@ -19,7 +19,7 @@ const popupImageTitle = document.querySelector('.popup__image-title');
 const popupImagePicture = document.querySelector('.popup__image-picture');
 const addButtonForm = document.querySelector('.popup__save-button');
 
-function mistake(el) {
+function inactive(el) {
   el.classList.add(listValidation.buttonInactive);
 }
 
@@ -106,7 +106,7 @@ function getElement(item) {
 addButton.addEventListener('click', function () {
   openPopup(popupCreate);
   const createButton = popupCreate.querySelector('.popup__save-button');
-  mistake(createButton);
+  inactive(createButton);
   createButton.disabled = true;
  });
 
