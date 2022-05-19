@@ -17,7 +17,11 @@ const popupImage = document.querySelector('.popup_type_image');
 const overlayClose = document.querySelector('.popup__overlay');
 const popupImageTitle = document.querySelector('.popup__image-title');
 const popupImagePicture = document.querySelector('.popup__image-picture');
+const addButtonForm = document.querySelector('.popup__save-button');
 
+function mistake(el) {
+  el.classList.add(listValidation.buttonInactive);
+}
 
 function openPopup(el) {
   el.classList.add('popup_opened');
@@ -26,7 +30,7 @@ function openPopup(el) {
 
 function closePopup(el) {
   el.classList.remove('popup_opened');
-  document.addEventListener('keydown', keyClose);
+  document.removeEventListener('keydown', keyClose);
 }
 formElement.addEventListener('submit', function (evt) {
   evt.preventDefault();
@@ -101,7 +105,10 @@ function getElement(item) {
 
 addButton.addEventListener('click', function () {
   openPopup(popupCreate);
-});
+  const createButton = popupCreate.querySelector('.popup__save-button');
+  mistake(createButton);
+  createButton.disabled = true;
+ });
 
 const popupImageClose = document.querySelector('.popup__close-button_type_exit');
 popupImageClose.addEventListener('click', function () {

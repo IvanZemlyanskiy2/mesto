@@ -31,9 +31,8 @@ const hideInputError = (formElement, inputElement, validations) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
     inputElement.classList.remove(validations.inputElementErrore);
     errorElement.classList.remove(validations.buttonInactive);
-  errorElement.textContent = '';
-}; 
-
+    errorElement.textContent = '';
+  }
 const isValid = (formElement, inputElement, validations) => {
   if (!inputElement.validity.valid) {
        showInputError(formElement, inputElement, inputElement.validationMessage, validations);
@@ -60,6 +59,7 @@ const setEventListeners = (formElement, validations) => {
 
 
 const enableValidation = (validations) => {
+
   const formList = Array.from(
     document.querySelectorAll(validations.formElement)
   );
@@ -69,16 +69,19 @@ const enableValidation = (validations) => {
     });
     setEventListeners(formElement, validations);
   });
+
 };
- enableValidation({
+const listValidation = {  
   formElement: '.popup__form',
   inputList: '.popup__input',
   buttonElement: '.popup__save-button',
   buttonInactive: 'popup__save-button_inactive',
   inputElementErrore: 'popup__input_error',
   errorElement: 'form__input-error_active',
-});
+}
+
+ enableValidation(listValidation);
 
 
-
+ 
 
